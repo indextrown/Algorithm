@@ -18,7 +18,7 @@ struct Point
 };
 
 
-bool compare(const Point &a, const Point &b)
+inline bool compare(const Point &a, const Point &b)
 {
     return a.x < b.x;
 }
