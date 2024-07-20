@@ -16,8 +16,9 @@ struct Point {
         return a.x < b.x
     }
 
-    static func distanceSquared(_ a: Point, _ b: Point) -> Int {
-        return (b.x - a.x) * (b.x - a.x) + (b.y - a.y) * (b.y - a.y)
+    static func distanceSquared(_ a: Point, _ b: Point) -> Int64
+    {
+        return Int64(b.x - a.x) * Int64(b.x - a.x) + Int64(b.y - a.y) * Int64(b.y - a.y)
     }
 }
 
