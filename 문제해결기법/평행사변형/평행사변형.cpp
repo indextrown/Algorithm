@@ -23,7 +23,7 @@ bool compare(const Point &a, const Point &b)
     return a.x < b.x;
 }
 
-int distance(const Point &a, const Point &b)
+inline int distance(const Point &a, const Point &b)
 {
 //    return sqrt(pow(b.x-a.x, 2) + pow(b.y-a.y, 2));
     return pow(b.x-a.x, 2) + pow(b.y-a.y, 2);
