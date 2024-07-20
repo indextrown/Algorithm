@@ -58,11 +58,6 @@ int main()
         // x좌표 기준 오름차순 정렬
         sort(point, point+4, compare);
         
-        double d1, d2, d3, d4;
-        d1 = distance(point[0], point[1]);
-        d2 = distance(point[2], point[3]);
-        d3 = distance(point[0], point[2]);
-        d4 = distance(point[1], point[3]);
         
         if (distance(point[0], point[1]) == distance(point[2], point[3]) && distance(point[0], point[2]) == distance(point[1], point[3]))
         {
