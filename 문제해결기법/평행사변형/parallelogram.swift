@@ -11,17 +11,15 @@ import Foundation
 struct Point {
     var x: Int
     var y: Int
+    
+    static func compare(_ a: Point, _ b: Point) -> Bool {
+        return a.x < b.x
+    }
+
+    static func distanceSquared(_ a: Point, _ b: Point) -> Int {
+        return (b.x - a.x) * (b.x - a.x) + (b.y - a.y) * (b.y - a.y)
+    }
 }
-
-func compare(_ a: Point, _ b: Point) -> Bool {
-    return a.x < b.x
-}
-
-func distance(_ a: Point, _ b: Point) -> Int {
-    return (b.x - a.x) * (b.x - a.x) + (b.y - a.y) * (b.y - a.y)
-}
-
-
 
 @main
 struct Main {
@@ -47,12 +45,12 @@ struct Main {
                 if points.allSatisfy({ $0.x == 0 && $0.y == 0 }) { break }
 
                 // x좌표 기준 오름차순 정렬
-                points.sort(by: compare)
+                points.sort(by: Point.compare)
 
-                let d1 = distance(points[0], points[1])
-                let d2 = distance(points[2], points[3])
-                let d3 = distance(points[0], points[2])
-                let d4 = distance(points[1], points[3])
+                let d1 = Point.distanceSquared(points[0], points[1])
+                let d2 = Point.distanceSquared(points[2], points[3])
+                let d3 = Point.distanceSquared(points[0], points[2])
+                let d4 = Point.distanceSquared(points[1], points[3])
 
                 if d1 == d2 && d3 == d4 {
                     output += "1\n"
