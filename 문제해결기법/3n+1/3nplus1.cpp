@@ -39,7 +39,7 @@ int main()
             {
                 if (n==1) break;
                 if (n%2 != 0) n = 3*n + 1;
-                else n /= 2;
+                else n >>= 1;
                 count++;
             }
             
