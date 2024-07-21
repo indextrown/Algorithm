@@ -1,5 +1,14 @@
 # Swift를 이용한 알고리즘 공부 
 
+## 문제해결기법
+| Round | Title                                                                | C++                                                                                          | Swift                               |
+|:-----:|:--------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|:--------------:|
+| 1  | [3nplus1](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/3n%2B1/assignDoc1.pdf)                           | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/3n%2B1/3nplus1.cpp)  |
+| 2  | [parallelogram](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/parallelogram/assignDoc9.pdf)                           | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/parallelogram/parallelogram.cpp)  |
+
+
+
+
 ## 백준
 
 | Round | Title                                                                | C++                                                                                          | Swift                               |
