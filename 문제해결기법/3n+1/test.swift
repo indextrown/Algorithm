@@ -11,6 +11,7 @@ import Foundation
 @main
 struct Main {
     static func main() {
-        print("123")
+        let inpfile = "1.inp"
+        let outfile = "3nplus1.out"
     }
 }
