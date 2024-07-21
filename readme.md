@@ -4,7 +4,7 @@
 | Round | Title                                                                | C++                                                                                          | Swift                               |
 |:-----:|:--------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|:--------------:|
 | 1 | [3nplus1](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/3n%2B1/assignDoc1.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/3n%2B1/3nplus1.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/3n%2B1/3nplus1.swift)  |
-| 2 | [parallelogram](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/Trip/assignDoc2.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/Trip/Trip.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/Trip/Trip.swift)  |
+| 2 | [Trip](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/Trip/assignDoc2.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/Trip/Trip.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/Trip/Trip.swift)  |
 | 3 | [parallelogram](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/Parallelogram/assignDoc9.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/parallelogram/Parallelogram.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/문제해결기법/parallelogram/Parallelogram.swift)  |
 
 
