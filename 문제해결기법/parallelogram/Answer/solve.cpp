@@ -51,17 +51,6 @@ int main() {
 
     
     
-//    for (int i=0; i<integerArray.size(); i++)
-//    {
-//        //cout << integerArray[i] << " " << integerArray2[i];
-//        if (integerArray[i] != integerArray2[i])
-//        {
-//            cout << " bad" << "\n";
-//        }
-//        else
-//        {
-//            cout << "\n";
-//        }
-//    }
+
     return 0;
 }
