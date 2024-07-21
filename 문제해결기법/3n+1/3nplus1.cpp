@@ -8,7 +8,6 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-
 using namespace std;
 
 ifstream inpfile("1.inp");
