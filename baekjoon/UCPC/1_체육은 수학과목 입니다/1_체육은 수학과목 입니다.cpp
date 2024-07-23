@@ -12,9 +12,10 @@ int a, b;
 
 int main()
 {
-    freopen("input.txt", "r", stdin);
+//    freopen("input.txt", "r", stdin);
     cin.tie(NULL); ios_base::sync_with_stdio(false);
     cin >> a >> b;
     cout <<  min(a, b) * 100 / 2 << "\n";
     return 0;
 }
+
