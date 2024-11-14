@@ -31,6 +31,8 @@
 using namespace std;
 
 int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
     freopen("input.txt", "r", stdin);
     
     int T;
@@ -39,8 +41,6 @@ int main() {
     // 오른쪽 -> 아래 -> 왼쪽 -> 위
     const int dx[4] = {0, 1, 0, -1}; // 행변화
     const int dy[4] = {1, 0, -1, 0}; // 열변화
-    
-    
     
     for (int tc=0; tc<T; tc++) {
         int N;
