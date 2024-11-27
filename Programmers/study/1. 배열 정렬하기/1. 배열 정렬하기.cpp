@@ -2,12 +2,11 @@
 //  sortArray.cpp
 //  Algorithm
 //
-//  Created by 김동현 on 7/16/24.
+//  Created by 김동현 on 11/26/24.
 //
 
+#include <iostream>
 #include <vector>
-#include <algorithm> //sort를 위해 선언
-
 using namespace std;
 
 vector<int> solution(vector<int> arr) {
@@ -15,10 +14,7 @@ vector<int> solution(vector<int> arr) {
     return arr;
 }
 
-
-//아래 코드는 테스트 코드 입니다.
-
-#include <iterator>
+// 테스트 코드
 #include <iostream>
 void print(vector<int> vec)
 {
