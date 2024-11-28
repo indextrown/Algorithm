@@ -27,4 +27,4 @@ func main() {
     printSolution(solution([5, 0, 2, 7]))    // 2 5 7 9 12
 }
 
-main()
+//main()
