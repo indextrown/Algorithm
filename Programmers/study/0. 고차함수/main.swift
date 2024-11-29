@@ -22,7 +22,7 @@ import Foundation
  
  */
 
-func main() {
+func mains() {
     
     // MARK: - .map {} : 배열의 각 요소에 동일한 작업을 수행한 결과로 새로운 배열 반환
     let numbers = [1, 2, 3, 4, 5]
