@@ -4,7 +4,7 @@
 //
 //  Created by 김동현 on 11/28/24.
 //
-
+// https://school.programmers.co.kr/learn/courses/30/lessons/12949
 import Foundation
 
 func solution(_ answers: [Int]) -> [Int] {
