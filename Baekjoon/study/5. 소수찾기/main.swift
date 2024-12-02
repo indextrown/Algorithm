@@ -18,17 +18,23 @@ for num in arr {
     
     // 숫자가 1이 아니면서 1과 자기자신을 제외한 다른 숫자가 존재하면 해당 숫자는 무시
     if num != 1 {
+        
         for i in 2..<num {
             if num % i == 0 {
                 isDivisible = true
             }
         }
+        
         if !isDivisible {
             cnt = cnt + 1
         }
     }
 }
 print(cnt)
+
+
+
+
 
 
 //var n = Int(readLine()!)!
