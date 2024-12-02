@@ -15,6 +15,16 @@
 | 3 | [parallelogram](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Parallelogram/assignDoc9.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Parallelogram/Parallelogram.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Parallelogram/Parallelogram.swift)  |
 
 
+## 백준
+| Round | Title                                                                | C++                                                                                          | Swift                               |
+|:-----:|:--------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|:--------------:|
+| 4153  | [직각 삼각형](https://www.acmicpc.net/problem/4153)                           | [Link](https://github.com/indextrown/Algorithm/blob/main/Baekjoon/study/1.%20직각삼각형/main.swift)  |
+| 10814  | [나이순 정렬](https://www.acmicpc.net/problem/10814)                           | [Link](https://github.com/indextrown/Algorithm/blob/main/Baekjoon/study/2.%20나이순%20정렬/main.swift)  |
+| 1546  | [평균](https://www.acmicpc.net/problem/1546)                           | [Link](https://github.com/indextrown/Algorithm/blob/main/Baekjoon/study/3.%20평균/main.swift)  |
+| 2609 | [최대공약수와 최소공배수](https://www.acmicpc.net/problem/2609)                    | [Link](https://github.com/indextrown/Algorithm/blob/main/Baekjoon/study/4.%20최대공약수와%20최소공배수/main.swift)  |
+| 1978  | [소수 찾기](https://www.acmicpc.net/problem/1978)                                 | [Link](https://github.com/indextrown/Algorithm/blob/main/Baekjoon/study/5.%20소수찾기/main.swift)  |
+
+
 <!--
 ## 백준
 
