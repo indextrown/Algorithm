@@ -21,6 +21,6 @@ func mySwap<T>(_ a: inout T, _ b: inout T) {
 var a = 10
 var b = 20
 
-print(a, b)
+print(a, b)     // 10, 20
 mySwap(&a, &b)
-print(a, b)
+print(a, b)     // 20, 10

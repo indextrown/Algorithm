@@ -18,7 +18,7 @@
  */
 
 #include <iostream>
-#include <vector>0
+#include <vector>
 #include <queue>
 using namespace std;
 
