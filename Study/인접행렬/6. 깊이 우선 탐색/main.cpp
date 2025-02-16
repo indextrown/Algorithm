@@ -2,43 +2,61 @@
 //  main.cpp
 //  Algorithm
 //
-//  Created by 김동현 on 1/15/25.
+//  Created by 김동현 on 2/16/25.
 //
 
+/*
+ MARK: [connected component 문제] - 종화는 방구쟁이야
+ 
+ 종화는 21세기 유명한 방구쟁이다. 종화는 방구를 낄 때 "이러다... 다 죽어!!" 를 외치며 방구를
+ 뀌는데 이렇게 방귀를 뀌었을 때 방귀는 상하좌우 네방향으로 뻗어나가며 종화와 연결된 "육지"는
+ 모두 다 오염된다.
+ "바다"로는 방구가 갈 수 없다. 맵이 주어졌을 때 종화가 "이러다... 다 죽어!!"를
+ "최소한" 몇 번외쳐야 모든 육지를 오염시킬 수 있는지 말해보자. 1은 육지며 0은 바다를 가리킨다.
+ 
+ 입력
+ 맵의 세로길이 N과 가로길이 M 이 주어지고 이어서 N * M의 맵이 주어진다.
+ 
+ 출력
+ "이러다... 다 죽어!!"를 몇 번 외쳐야하는지 출력하라.
+ 
+ 범위
+ 1 <= N <= 100
+ 1 <= M <= 100
+ 
+ 예제입력
+ 5 5
+ 1 0 1 0 1
+ 1 1 0 0 1
+ 0 0 0 1 1
+ 0 0 0 1 1
+ 0 1 0 0 0
+ 
+ 예제출력
+ 4
+ 
+ */
 #include <iostream>
-#include <vector>
 using namespace std;
 
-const int n = 6;
-vector<int> adj[6];
-int visited[n];
+const int dy[] = {-1, 0, 1, 0};
+const int dx[] = {0, 1, 0, -1};
 
-void DFS2(int u){
-    visited[u] = 1;
-    cout << u << "\n";
-    for(int v : adj[u]) {
-        if(visited[v] == 0) {
-            DFS2(v);
-        }
-    }
-    cout << u << "로부터 시작된 함수가 종료되었습니다.\n";
-    return;
-}
-
-void DFS(int here) {
-    visited[here] = 1;
-    cout << here << "\n";
-    for (int there : adj[here]) {
-        if (visited[there]) continue;
-        DFS(there);
-    }
-}
+int m, n, k, y, x, ret, ny, nx, t;
+int a[104][104];
+bool visited[104][104];
 
 int main() {
-    adj[1].push_back(2);
-    adj[1].push_back(3);
-    adj[2].push_back(4);
-    adj[4].push_back(2);
-    adj[2].push_back(5);
-    DFS(1);
+    cin.tie(NULL);
+    cout.tie(NULL);
+    freopen("input.txt", "r", stdin);
+
+    cin >> n >> m;
+    
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<m; j++) {
+            cin >> a[i][j];
+        }
+    }
+    cout<<1<<"\n";
 }

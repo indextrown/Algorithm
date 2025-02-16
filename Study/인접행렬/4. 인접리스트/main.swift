@@ -31,6 +31,8 @@ adj[4].append(3);
 
 
 for i in 0..<v {
+    // 방문하지 않고 연결된 간선이 있는 경우 DFS 시작
+    // !adj[i].isEmpty를 통해 고립된 노드는 건너뛴다
     if !visited[i] && !adj[i].isEmpty {
         go(i)
     }
