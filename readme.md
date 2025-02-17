@@ -7,12 +7,22 @@
 | 1 | [Maximal Volume Finder](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Maximal%20Volume%20Finder/Maximal%20Volume%20Finder%20in%20High-Dimensional%20Vector%20Spaces.pdf)                     | [Link]()  | [Link]()  |
 -->
 
+
+
+## 개념
+
+| Round |    Title     |     Keyword      |
+| :---: | :----------: | :--------------: |
+|   0   | [인접행렬]() | adjacency matrix |
+
+
+
 ## 문제해결기법
 | Round | Title                                                                | C++                                                                                          | Swift                               |
 |:-----:|:--------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------:|:--------------:|
-| 1 | [3nplus1](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/3n%2B1/assignDoc1.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/3n%2B1/3nplus1.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/3n%2B1/3nplus1.swift)  |
-| 2 | [Trip](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Trip/assignDoc2.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Trip/Trip.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Trip/Trip.swift)  |
-| 3 | [parallelogram](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Parallelogram/assignDoc9.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Parallelogram/Parallelogram.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Parallelogram/Parallelogram.swift)  |
+| 0 | [3nplus1](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/3n%2B1/assignDoc1.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/3n%2B1/3nplus1.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/3n%2B1/3nplus1.swift)  |
+| 1 | [Trip](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Trip/assignDoc2.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Trip/Trip.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Trip/Trip.swift)  |
+| 2 | [parallelogram](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Parallelogram/assignDoc9.pdf)                     | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Parallelogram/Parallelogram.cpp)  | [Link](https://github.com/indextrown/Algorithm/blob/main/Problem%20Solving/Parallelogram/Parallelogram.swift)  |
 
 
 ## 백준
