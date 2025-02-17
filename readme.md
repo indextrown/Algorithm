@@ -11,9 +11,9 @@
 
 ## 개념
 
-| Round |    Title     |     Keyword      |
-| :---: | :----------: | :--------------: |
-|   0   | [인접행렬]() | adjacency matrix |
+| Round |                            Title                             |     Keyword      |
+| :---: | :----------------------------------------------------------: | :--------------: |
+|   0   | [인접행렬](https://github.com/indextrown/Algorithm/blob/main/Study/2주차/2025-02-17-%5B알고리즘%5D%20인접행렬.md) | adjacency matrix |
 
 
 
