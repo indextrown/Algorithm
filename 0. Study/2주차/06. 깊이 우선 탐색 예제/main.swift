@@ -37,3 +37,45 @@
  
  */
 
+import Foundation
+
+freopen("input.txt", "r", stdin);
+let input = readLine()!.split(separator: " ").map { Int($0)! }
+let (n, m) = (input[0], input[1])
+
+var adj: [[Int]] = Array(repeating: Array(repeating: 0, count: m), count: n)
+var visited: [[Bool]] = Array(repeating: Array(repeating: false, count: m), count: n)
+let dy = [-1, 0, 1, 0]
+let dx = [0, 1, 0, -1]
+var ny = 0, nx = 0, ret = 0
+
+func DFS(_ y: Int, _ x: Int) {
+    visited[y][x] = true
+    
+    for i in 0..<4 {
+        ny = y + dy[i]
+        nx = x + dx[i]
+        
+        if ny < 0 || nx < 0 || ny >= n || nx >= m { continue }
+        
+        if !visited[ny][nx] && adj[ny][nx] == 1 {
+            DFS(ny, nx)
+        }
+    }
+}
+
+for row in 0..<n {
+    let data = readLine()!.split(separator: " ").map { Int($0)! }
+    adj[row] = data
+}
+
+for row in 0..<n {
+    for col in 0..<m {
+        if !visited[row][col] && adj[row][col] == 1{
+            DFS(row, col)
+            ret += 1
+        }
+    }
+}
+
+print(ret)
