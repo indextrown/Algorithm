@@ -46,6 +46,21 @@ int m, n, k, y, x, ret, ny, nx, t;
 int a[104][104];
 bool visited[104][104];
 
+void DFS(int y, int x) {
+    visited[y][x] = 1;
+    
+    for (int i=0; i<4; i++) {
+        ny = y + dy[i];
+        nx = x + dx[i];
+        
+        if (ny < 0 || nx < 0 || ny >= n || nx >= m) continue;
+        
+        if (!visited[ny][nx] && a[ny][nx]) {
+            DFS(ny, nx);
+        }
+    }
+}
+
 int main() {
     cin.tie(NULL);
     cout.tie(NULL);
@@ -58,5 +73,16 @@ int main() {
             cin >> a[i][j];
         }
     }
-    cout<<1<<"\n";
+    
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<m; j++) {
+            if ( !visited[i][j] && a[i][j]) {
+                DFS(i, j);
+                ret++;
+            }
+        }
+    }
+    
+    cout << ret << "\n";
+    return 0;
 }
