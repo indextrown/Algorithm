@@ -82,7 +82,7 @@ struct DoubleStackQueue<T> {
      */
 }
 
-/*
+
 @main
 struct Main {
     static func main() {
@@ -91,78 +91,39 @@ struct Main {
         queue.enqueue(2)
         queue.enqueue(3)
         
-        while !queue.isEmpty {
-            print("\(queue.dequeue()!)")
-        }
-    }
-}
-*/
-
-
-/*
-@main
-struct Main {
-    static func main() {
-        let times = 1_000_000 // 100만 개 삽입
-
+//        while !queue.isEmpty {
+//            print("\(queue.dequeue()!)")
+//        }
         
-        // ✅ Queue 테스트
-        var myQueue = Queue<Int>()
-        var startTime = CFAbsoluteTimeGetCurrent()
-
-        for i in 1...times {
-            myQueue.enqueue(i)
+        
+        while let element = queue.dequeue() {
+            print(element)
         }
-        var durationTime = CFAbsoluteTimeGetCurrent() - startTime
-        print("Queue enqueue time: \(durationTime) seconds")
-
-        startTime = CFAbsoluteTimeGetCurrent()
-        for _ in 1...times {
-            _ = myQueue.dequeue()
-        }
-        durationTime = CFAbsoluteTimeGetCurrent() - startTime
-        print("Queue dequeue time: \(durationTime) seconds\n")
-
-        // ✅ DoubleStackQueue 테스트
-        var myQueue2 = DoubleStackQueue<Int>()
-        startTime = CFAbsoluteTimeGetCurrent()
-
-        for i in 1...times {
-            myQueue2.enqueue(i)
-        }
-        durationTime = CFAbsoluteTimeGetCurrent() - startTime
-        print("DoubleStackQueue enqueue time: \(durationTime) seconds")
-
-        startTime = CFAbsoluteTimeGetCurrent()
-        for _ in 1...times {
-            _ = myQueue2.dequeue()
-        }
-        durationTime = CFAbsoluteTimeGetCurrent() - startTime
-        print("DoubleStackQueue dequeue time: \(durationTime) seconds\n")
     }
 }
-*/
 
-@main
-struct Main {
-    static func main() {
-        let times = 1_000_000 // 100만 개 삽입
-        var myQueue = DoubleStackQueue<Int>()
 
-        // 🔹 Enqueue 시간 측정
-        var startTime = CFAbsoluteTimeGetCurrent()
-        for i in 1...times {
-            myQueue.enqueue(i) // ✅ 변수명 수정
-        }
-        var durationTime = CFAbsoluteTimeGetCurrent() - startTime
-        print("DoubleStackQueue enqueue time: \(durationTime) seconds")
 
-        // 🔹 Dequeue 시간 측정
-        startTime = CFAbsoluteTimeGetCurrent()
-        for _ in 1...times {
-            myQueue.dequeue() // ✅ 변수명 수정
-        }
-        durationTime = CFAbsoluteTimeGetCurrent() - startTime
-        print("DoubleStackQueue dequeue time: \(durationTime) seconds\n")
-    }
-}
+//@main
+//struct Main {
+//    static func main() {
+//        let times = 1_000_000 // 100만 개 삽입
+//        var myQueue = DoubleStackQueue<Int>()
+//
+//        // 🔹 Enqueue 시간 측정
+//        var startTime = CFAbsoluteTimeGetCurrent()
+//        for i in 1...times {
+//            myQueue.enqueue(i) // ✅ 변수명 수정
+//        }
+//        var durationTime = CFAbsoluteTimeGetCurrent() - startTime
+//        print("DoubleStackQueue enqueue time: \(durationTime) seconds")
+//
+//        // 🔹 Dequeue 시간 측정
+//        startTime = CFAbsoluteTimeGetCurrent()
+//        for _ in 1...times {
+//            myQueue.dequeue() // ✅ 변수명 수정
+//        }
+//        durationTime = CFAbsoluteTimeGetCurrent() - startTime
+//        print("DoubleStackQueue dequeue time: \(durationTime) seconds\n")
+//    }
+//}
