@@ -31,7 +31,7 @@ int main() {
     }
     
     queue<pair<int, int>> q;
-    visited[sy][sx] = 1;
+    
     q.push({sy, sx});
     
     while(q.size()) {
