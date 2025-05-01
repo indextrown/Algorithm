@@ -1,7 +1,7 @@
 # Swift를 이용한 알고리즘 공부 
 
 
-## [알고리즘 셋팅](https://github.com/indextrown/Algorithm/tree/main/0.%20알고리즘%20개념공부)
+## [알고리즘 세팅](https://github.com/indextrown/Algorithm/tree/main/0.%20알고리즘%20개념공부)
 
 
 ## 개념
