@@ -55,7 +55,9 @@ String(repeating: "*", count: N)
 ```
 
 ### 11. 조건에 맞지 않을 때 바로 exit하기
+```swift
 guard N > 1 else { exit(0) }
+```
 
 ### 12. 배열에서 특정 값 포함 여부 확인 (O(N))
 ```swift
