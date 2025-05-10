@@ -19,10 +19,11 @@
 
 ## 백준
 
-|     Round     |                        Title                        |                             C++                              |                            Swift                             |                             |
-| :-----------: | :-------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | --------------------------- |
-| 탐색 알고리즘 |                                                     |                                                              |                                                              |                             |
-|     1012      | [유기농 배추](https://www.acmicpc.net/problem/1012) |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/0.%20알고리즘%20개념공부/2주차/09.%20예제문제/1.%201012-유기농%20배추/main.swift) | BFS, DFS 둘다 가능          |
-|     2178      |  [미로탐색](https://www.acmicpc.net/problem/2178)   | [Link](https://github.com/indextrown/Algorithm/blob/main/0.%20알고리즘%20개념공부/2주차/09.%20예제문제/2.%202178-미로탐색/2178-미로탐색.cpp) |                                                              | Connected Component(덩어리) |
-|     2468      |  [안전영역](https://www.acmicpc.net/problem/2468)   |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/0.%20알고리즘%20개념공부/2주차/09.%20예제문제/3.%202468-안전영역/main.swift) | Connected Component(덩어리) |
+|     Round     |                        Title                        |                             C++                              |                            Swift                             |                                  |
+| :-----------: | :-------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | -------------------------------- |
+| 탐색 알고리즘 |                                                     |                                                              |                                                              |                                  |
+|     1012      | [유기농 배추](https://www.acmicpc.net/problem/1012) |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/0.%20알고리즘%20개념공부/2주차/09.%20예제문제/1.%201012-유기농%20배추/main.swift) | BFS, DFS 둘다 가능               |
+|     2178      |  [미로탐색](https://www.acmicpc.net/problem/2178)   | [Link](https://github.com/indextrown/Algorithm/blob/main/0.%20알고리즘%20개념공부/2주차/09.%20예제문제/2.%202178-미로탐색/2178-미로탐색.cpp) |                                                              | 최단거리 구하기                  |
+|     2468      |  [안전영역](https://www.acmicpc.net/problem/2468)   |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/0.%20알고리즘%20개념공부/2주차/09.%20예제문제/3.%202468-안전영역/main.swift) | Connected Component              |
+|     2583      | [영역 구하기](https://www.acmicpc.net/problem/2583) |                                                              |                                                              | 넓이구하기 + Connected Component |
 

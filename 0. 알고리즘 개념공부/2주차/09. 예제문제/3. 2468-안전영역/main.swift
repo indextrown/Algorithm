@@ -5,24 +5,6 @@
 //  Created by 김동현 on 4/27/25.
 //
 
-//for round in 1...100 {
-//    var cnt = 0
-//    for i in 0..<n {
-//        for j in 0..<n {
-//            if graph[i][j] <= round {
-//                // print(graph[i][j]) /// 갇힌 영역
-//                continue
-//            } else {
-//                cnt += 1
-//                // print(graph[i][j], 1) /// 안갇힌 영역
-//            }
-//        }
-//        // print()
-//    }
-//    if cnt == 0 { break }
-//    print("라운드\(round): \(cnt)개 살아있음")
-//}
-
 import Foundation
 
 freopen("input.txt", "r", stdin)
