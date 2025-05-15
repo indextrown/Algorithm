@@ -14,6 +14,18 @@
 #include <tuple>
 using namespace std;
 
+/*
+ BFS
+ - 가중치는 어떤 위치로 가든 한칸이기 때문에 BFS로 접근하면 된다
+ - 즉 가중치가 같은 MAP에서 최단거리로 사용할 수 있는 BFS를 사용 가능하다.
+ - 가중치가 다르다면 최단 거리 알고리즘(다익스트라, 플로이드 워셜)을 사용해야한다
+ 
+ 1 0
+ 1 0
+ 
+ 
+ */
+
 const int max_n = 104;
 const int dy[4] = {-1, 0, 1, 0};
 const int dx[4] = {0, 1, 0, -1};
@@ -47,6 +59,7 @@ int main() {
             int nx = x + dx[i];
             
             // 맵의 범위를 체크하고(오버플로우 체크), 건널수 없다면
+            // 오버플로우를 체크하고 maze[ny][nx] == 0 체크하자
             if (ny<0 || ny>=n || nx<0 || nx>=m || maze[ny][nx] == 0) {
                 continue;
             }
