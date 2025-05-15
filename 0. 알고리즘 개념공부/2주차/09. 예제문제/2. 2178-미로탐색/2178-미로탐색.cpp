@@ -23,7 +23,13 @@ using namespace std;
  1 0
  1 0
  
+ 붙어있는 입력 받는법
+ - string으로 받아 변환하기
+ - scanf로 1d로 받기
  
+ 로직
+ visit[next] = visit[here] + 1
+ visit[nx][nz] = visit[y][x][z] + 1
  */
 
 const int max_n = 104;
@@ -67,6 +73,7 @@ int main() {
             // 이미 방문했다면 무시
             if (visited[ny][nx]) continue;
             
+            // 중요 - BFS에서 현재 위치에서 한칸 더 이동하면 새 위치에 도달한다.
             visited[ny][nx] = visited[y][x] + 1;
             q.push({ny, nx});
         }
