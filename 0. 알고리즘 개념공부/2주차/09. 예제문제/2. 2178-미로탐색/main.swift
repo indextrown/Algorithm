@@ -171,3 +171,49 @@ print(visited[n-1][m-1])
 
 
 
+
+//import Foundation
+//
+//freopen("input.txt", "r", stdin)
+//
+//let max_n = 104
+//let dy = [-1, 0, 1, 0]
+//let dx = [0, 1, 0, -1]
+//var maze = Array(repeating: Array(repeating: 0, count: max_n), count: max_n)
+//var visited = Array(repeating: Array(repeating: 0, count: max_n), count: max_n)
+//var q: [(Int, Int)] = []
+//
+//// (세로, 가로)
+//let (n, m): (Int, Int) = { let input = readLine()!.split(separator: " ").map { Int($0)! }; return (input[0], input[1]) }()
+//
+//for i in 0..<n {
+//    let row = Array(readLine()!).map { Int(String($0))! }
+//    for j in 0..<m {
+//        maze[i][j] = row[j]
+//    }
+//}
+//
+//visited[0][0] = 1   // 1. 방문처리를 하고
+//q.append((0, 0))    // 2. push
+//
+//while !q.isEmpty {
+//    let (y, x) = q.removeFirst()
+//    
+//    for i in 0..<4 {
+//        
+//        let ny = y + dy[i]
+//        let nx = x + dx[i]
+//        
+//        // 범위 체크
+//        if ny<0 || ny>=n || nx<0 || nx>=m { continue }
+//        
+//        // 벽이거나 이미 방문한 경우 무시
+//        if maze[ny][nx] == 0 || visited[ny][nx] > 0 { continue }
+//        
+//        visited[ny][nx] = visited[y][x] + 1
+//        
+//        q.append((ny, nx))
+//    }
+//}
+//
+//print(visited[n-1][m-1])
