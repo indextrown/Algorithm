@@ -17,10 +17,15 @@ func printSolution(_ vec: [Int]) {
 }
 
 // 메인 함수
-func main() {
-    printSolution(solution([1, -5, 2, 4, 3])) 
+func start() {
+    printSolution(solution([1, -5, 2, 4, 3]))
     printSolution(solution([2, 1, 1, 3, 2, 5, 4]))
     printSolution(solution([6, 1, 7]))
 }
 
-//main()
+@main
+struct Main {
+    static func main() {
+        start()
+    }
+}
