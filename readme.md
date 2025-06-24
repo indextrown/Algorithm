@@ -33,12 +33,12 @@
 
 ## 프로그래머스
 
-| Round  |           Title           |                             C++                              |                            Swift                             |      |
-| :----: | :-----------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | ---- |
-| 워밍업 |                           |                                                              |                                                              |      |
-|   1    |     [배열 정렬하기]()     | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/1.%20배열%20정렬하기/1.%20배열%20정렬하기.cpp) | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/1.%20배열%20정렬하기/1.%20배열%20정렬하기.swift) |      |
-|   2    |     [배열 제어하기]()     | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/2.%20배열%20제어하기/2.%20배열%20제어하기.cpp) | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/2.%20배열%20제어하기/2.%20배열%20제어하기.swift) |      |
-|   3    | [두 수를 뽑아서 더하기]() | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/3.%20두%20수를%20뽑아서%20더하기/main.cpp) | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/3.%20두%20수를%20뽑아서%20더하기/main.swift) |      |
-|   4    |       [모의고사]()        | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/4.%20모의고사/main.cpp) | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/4.%20모의고사/main2.swift) |      |
-|   5    |      [행렬의 곱셈]()      |                           [Link]()                           | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/5.%20행렬의%20곱셈/main.swift) |      |
-|        |                           |                                                              |                                                              |      |
+| Round  |                            Title                             |                             C++                              |                            Swift                             |      |
+| :----: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | ---- |
+| 워밍업 |                                                              |                                                              |                                                              |      |
+|   1    |                      [배열 정렬하기]()                       | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/1.%20배열%20정렬하기/1.%20배열%20정렬하기.cpp) | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/1.%20배열%20정렬하기/1.%20배열%20정렬하기.swift) |      |
+|   2    |                      [배열 제어하기]()                       | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/2.%20배열%20제어하기/2.%20배열%20제어하기.cpp) | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/2.%20배열%20제어하기/2.%20배열%20제어하기.swift) |      |
+|   3    |                  [두 수를 뽑아서 더하기]()                   | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/3.%20두%20수를%20뽑아서%20더하기/main.cpp) | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/3.%20두%20수를%20뽑아서%20더하기/main.swift) |      |
+|   4    |                         [모의고사]()                         | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/4.%20모의고사/main.cpp) | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/4.%20모의고사/main2.swift) |      |
+|   5    |                       [행렬의 곱셈]()                        |                           [Link]()                           | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/5.%20행렬의%20곱셈/main.swift) |      |
+|   6    | [실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889) |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/6.%20실패율/main.swift) |      |
