@@ -42,3 +42,5 @@
 |   4    |                         [모의고사]()                         | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/4.%20모의고사/main.cpp) | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/4.%20모의고사/main2.swift) |      |
 |   5    |                       [행렬의 곱셈]()                        |                           [Link]()                           | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/5.%20행렬의%20곱셈/main.swift) |      |
 |   6    | [실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889) |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/6.%20실패율/main.swift) |      |
+|   7    | [방문 길이](https://school.programmers.co.kr/learn/courses/30/lessons/49994) |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/7.%20방문%20길이/main.swift) |      |
+
