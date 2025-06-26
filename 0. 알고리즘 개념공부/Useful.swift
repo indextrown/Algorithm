@@ -67,4 +67,8 @@ func sortDic() {
     // [(key: "c", value: 10), (key: "B", value: 20), (key: "A", value: 30)]
 }
 
+// 5. swap
+func swap(_ a: Int, _ b: Int) {
+    
+}
 
