@@ -1,7 +1,17 @@
 # Swift를 이용한 알고리즘 공부 
 
-
 ## [알고리즘 세팅](https://github.com/indextrown/Algorithm/tree/main/0.%20알고리즘%20개념공부)
+
+## 자료구조
+
+| Round |    Name    |                            Swift                             |
+| :---: | :--------: | :----------------------------------------------------------: |
+|   0   |   Stack    | [Link](https://github.com/indextrown/Algorithm/blob/main/1.%20자료구조/0.%20stack.swift) |
+|   1   |   Queue    | [Link](https://github.com/indextrown/Algorithm/blob/main/1.%20자료구조/1.%20queue.swift) |
+|   2   |    Heap    | [Link](https://github.com/indextrown/Algorithm/blob/main/1.%20자료구조/2.%20heap.swift) |
+|   3   | Dictionary | [Link](https://github.com/indextrown/Algorithm/blob/main/1.%20자료구조/4.%20Dictionary.swift) |
+
+
 
 
 ## 개념

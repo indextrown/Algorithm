@@ -391,7 +391,7 @@ func performanceTest() {
 }
 
 func performanceTest2() {
-    let testCount = 100_000
+    let testCount = 500_000
     let keys = (0..<testCount).map { "key\($0)" }
     let values = (0..<testCount).map { "value\($0)" }
     
@@ -459,7 +459,7 @@ func performanceTest2() {
     
     
     
-    print("--- SuperHsahMap (Copy-on-Write) ---")
+    print("--- SuperHsahMap ---")
     var superMap = SuperHsahMap<String, String>(capacity: size, loadFactor: loadFactor)
     print("size: \(superMap.capacity)") // 👈 여기 추가
     
