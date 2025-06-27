@@ -53,4 +53,5 @@
 |   5    |                       [행렬의 곱셈]()                        |                           [Link]()                           | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/5.%20행렬의%20곱셈/main.swift) |      |
 |   6    | [실패율](https://school.programmers.co.kr/learn/courses/30/lessons/42889) |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/6.%20실패율/main.swift) |      |
 |   7    | [방문 길이](https://school.programmers.co.kr/learn/courses/30/lessons/49994) |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/7.%20방문%20길이/main.swift) |      |
+|   8    | [올바른 괄호](https://school.programmers.co.kr/learn/courses/30/lessons/12909) |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/7889a2b71bb308dac732cf4ffe557dba312d33d8/3.%20Programmers/8.%20올바른%20괄호/main.swift) |      |
 
