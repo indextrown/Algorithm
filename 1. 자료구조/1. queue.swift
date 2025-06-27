@@ -6,6 +6,14 @@
 //
 
 // https://velog.io/@gundy/Swift-Swift에서-Queue는-뭘로-구현해야-할까
+/*
+ --- Queue ---
+   - Enqueue: 0.0115초
+   - Dequeue: 0.6129초
+ --- DoubleStackQueue ---
+   - Enqueue: 0.0096초
+   - Dequeue: 0.0166초
+ */
 
 import Foundation
 
@@ -82,7 +90,7 @@ struct DoubleStackQueue<T> {
      */
 }
 
-
+/*
 @main
 struct Main {
     static func main() {
@@ -101,7 +109,7 @@ struct Main {
         }
     }
 }
-
+ */
 
 
 //@main
@@ -127,3 +135,47 @@ struct Main {
 //        print("DoubleStackQueue dequeue time: \(durationTime) seconds\n")
 //    }
 //}
+
+func performanceTest() {
+    let testCount = 100_000
+    
+    print("--- Queue ---")
+    var queue = Queue<Int>()
+    var start = CFAbsoluteTimeGetCurrent()
+    for i in 0..<testCount {
+        queue.enqueue(i)
+    }
+    var duration = CFAbsoluteTimeGetCurrent() - start
+    print("  - Enqueue: \(String(format: "%.4f", duration))초")
+    
+    start = CFAbsoluteTimeGetCurrent()
+    for _ in 0..<testCount {
+        _ = queue.dequeue()
+    }
+    duration = CFAbsoluteTimeGetCurrent() - start
+    print("  - Dequeue: \(String(format: "%.4f", duration))초")
+    
+    
+    print("--- DoubleStackQueue ---")
+    var doubleStackQueue = DoubleStackQueue<Int>()
+    start = CFAbsoluteTimeGetCurrent()
+    for i in 0..<testCount {
+        doubleStackQueue.enqueue(i)
+    }
+    duration = CFAbsoluteTimeGetCurrent() - start
+    print("  - Enqueue: \(String(format: "%.4f", duration))초")
+    
+    start = CFAbsoluteTimeGetCurrent()
+    for _ in 0..<testCount {
+        _ = doubleStackQueue.dequeue()
+    }
+    duration = CFAbsoluteTimeGetCurrent() - start
+    print("  - Dequeue: \(String(format: "%.4f", duration))초")
+}
+
+@main
+struct Main {
+    static func main() {
+        performanceTest()
+    }
+}
