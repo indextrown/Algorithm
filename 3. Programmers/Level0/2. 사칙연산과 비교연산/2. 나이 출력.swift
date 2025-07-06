@@ -11,3 +11,9 @@ func solution(_ age:Int) -> Int {
     return 2022 - (age - 1)
 }
 
+@main
+struct Main {
+    static func main() {
+        print(solution(20))
+    }
+}
