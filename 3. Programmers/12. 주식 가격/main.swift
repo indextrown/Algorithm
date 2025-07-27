@@ -41,3 +41,4 @@ func solution(_ prices:[Int]) -> [Int] {
 
 print(solution([1, 2, 3, 2, 3]))
 
+
