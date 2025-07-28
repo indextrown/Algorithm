@@ -12,10 +12,18 @@ func factorial(_ n: Int) -> Int {
     return n * factorial(n - 1)
 }
 
+func factorial2(_ n: Int) -> Int {
+    return (1...n).reduce(1, *)
+    // return (1...n).reduce(1) { $0 * $1 }
+}
+
 @main
 struct Main {
     static func main() {
-        let result = factorial(3)
+        let result = factorial(10)
         print(result)
+        
+        let result2 = factorial2(10)
+        print(result2)
     }
 }
