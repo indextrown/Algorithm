@@ -72,11 +72,3 @@ struct Main {
 
 
 
-//print("--- Swift Array (as Stack) ---")
-//var arrayStack: [Int] = []
-//start = CFAbsoluteTimeGetCurrent()
-//for i in 0..<testCount {
-//    arrayStack.append(i)
-//}
-//duration = CFAbsoluteTimeGetCurrent() - start
-//print("  - Append: \(String(format: "%.4f", duration))초")

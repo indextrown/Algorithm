@@ -20,10 +20,10 @@ func factorial2(_ n: Int) -> Int {
 @main
 struct Main {
     static func main() {
-        let result = factorial(10)
+        let result = factorial(3)
         print(result)
         
-        let result2 = factorial2(10)
-        print(result2)
+//        let result2 = factorial2(10)
+//        print(result2)
     }
 }
