@@ -16,14 +16,14 @@ func solution(_ s:String) -> Bool
     for c in s {
         
         // MARK: - 최초 시도
-         // 만약 (라면 넣기
-         if c == "(" { stack.append(c) }
+        // 만약 (라면 넣기
+        if c == "(" { stack.append(c) }
         
-         // 만약 )라면 stack의 top이 없으면 return false
-         else if c == ")" && stack.last == nil { return false }
+        // 만약 )라면 stack의 top이 없으면 return false
+        else if c == ")" && stack.last == nil { return false }
         
-         // 만약 )라면 stack의 top이 (이면 stack.pop
-         else if c == ")" && stack.last! == "(" { stack.removeLast() }
+        // 만약 )라면 stack의 top이 (이면 stack.pop
+        else if c == ")" && stack.last! == "(" { stack.removeLast() }
     }
     return stack.isEmpty
 }
@@ -35,7 +35,7 @@ func solution2(_ s:String) -> Bool
     stack.reserveCapacity(100_000)
     
     for c in s {
-    
+        
         
         switch c {
         case "(":
@@ -44,7 +44,7 @@ func solution2(_ s:String) -> Bool
             // top이 있고 top이 ( 이면 pop
             if let top = stack.last, top == "(" {
                 stack.removeLast()
-            // top이 없거나, top이 있으나 )이면 false
+                // top이 없거나, top이 있으나 )이면 false
             } else {
                 return false
             }
@@ -64,12 +64,12 @@ func solution3(_ s:String) -> Bool
     for c in s {
         
         switch c {
-            case "(":
-                openCnt += 1
-            case ")":
-                closeCnt += 1
-            default:
-                break
+        case "(":
+            openCnt += 1
+        case ")":
+            closeCnt += 1
+        default:
+            break
         }
         
         guard openCnt >= closeCnt else {
@@ -79,3 +79,24 @@ func solution3(_ s:String) -> Bool
     answer = openCnt == closeCnt
     return answer
 }
+
+
+func solution4(_ s:String) -> Bool {
+    var stack: [String] = []
+    
+    for c in s {
+        if c == "(" {
+            stack.append(c)
+        }
+        else if c == ")" {
+            if stack.last == nil {
+                return false
+            } else {
+                stack.removeLast()
+            }
+        }
+    }
+    
+    return stack.isEmpty
+}
+

@@ -15,7 +15,6 @@ func solution(_ numbers: [Int]) -> [Int] {
     
     // 두 수의 합을 저장할 공간
     var set = Set<Int>()
-    
     for i in 0..<cnt {
         for j in i+1..<cnt {
             set.insert(numbers[i] + numbers[j])
