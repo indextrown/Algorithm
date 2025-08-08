@@ -83,9 +83,16 @@ func solution3(_ prices:[Int]) -> [Int] {
         }
         stack.append(i)
     }
-    
+
+    /*
     for index in stack {
         result[index] = prices.count - index - 1
+    }
+     */
+    
+    while !stack.isEmpty {
+        let last = stack.removeLast()
+        result[last] = prices.count - last - 1
     }
     
     return result
