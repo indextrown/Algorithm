@@ -23,7 +23,6 @@ struct Main {
             print(circle.remove(at: idx), terminator: count == 1 ? "" : ", ")
         }
         print(">")
-        
     }
 }
 
