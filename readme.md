@@ -64,5 +64,3 @@
 | [Queue] |                                                              |                                                              |                                                              |                                                              |
 |   15    |    [요세푸스 문제](https://www.acmicpc.net/problem/1158)     |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/15.%20요세푸스%20문제/main.swift) | 큐를 사용해 k-1번 회전 후 k번째 원소를 제거하는 과정을 반복하여 제거 순서를 구할 수 있다. |
 |   16    | [기능개발](https://school.programmers.co.kr/learn/courses/30/lessons/42586) |                                                              | [Link](https://github.com/indextrown/Algorithm/blob/main/3.%20Programmers/16.%20기능개발/main.swift) | 각 작업의 배포일까지 필요한 날짜를 계산하고, 앞선 작업보다 늦게 끝나는 경우 해당 날짜로 갱신해 같은 날 배포될 기능 개수를 구한다. |
-
-
