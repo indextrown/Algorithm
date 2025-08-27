@@ -13,28 +13,25 @@ typedef int element;
 typedef struct {
     element data[MAX_STACK_SIZE];
     int top;
-} Stack;
-
-//element stack[MAX_STACK_SIZE];
-//int top = -1;
+} StackType;
 
 // 스택 초기화 함수
-void initStack(Stack *s) {
+void initStack(StackType *s) {
     s->top = -1;
 }
 
 // 공백 검출
-int isEmpty(Stack *s) {
+int isEmpty(StackType *s) {
     return (s->top == -1);
 }
 
 // 포화 상태
-int is_full(Stack *s) {
+int is_full(StackType *s) {
     return (s->top == (MAX_STACK_SIZE - 1));
 }
 
 // 삽입
-void push(Stack *s, element item) {
+void push(StackType *s, element item) {
     if (is_full(s)) {
         fprintf(stderr, "스택 포화 에러\n");
         return;
@@ -43,7 +40,7 @@ void push(Stack *s, element item) {
 }
 
 // 삭제
-element pop(Stack *s) {
+element pop(StackType *s) {
     if (isEmpty(s)) {
         fprintf(stderr, "스택 공백 에러\n");
         exit(1);
@@ -52,7 +49,7 @@ element pop(Stack *s) {
 }
 
 // 피크
-element peek(Stack *s) {
+element peek(StackType *s) {
     if (isEmpty(s)) {
         fprintf(stderr, "스택 공백 에러\n");
         exit(1);
@@ -62,7 +59,7 @@ element peek(Stack *s) {
 
 int main(void) {
     
-    Stack s;
+    StackType s;
     initStack(&s);
     
     push(&s, 1);

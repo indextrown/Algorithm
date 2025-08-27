@@ -31,7 +31,7 @@ struct Stack<T> {
     }
     
     func peek() -> T? {
-        return isEmpty ? nil : stack.last!
+        return isEmpty ? nil : stack.last
     }
 }
 
@@ -42,7 +42,7 @@ struct Main {
         stack.push(1)
         stack.push(2)
         stack.push(3)
-        
+    
         while let num = stack.pop() {
             print(num)
         }
