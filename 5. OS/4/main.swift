@@ -40,3 +40,6 @@ for _ in 0..<n {
 // MARK: - Logic
 print(queues.map { $0.map { ($0.remainingTime, $0.state) } })
 
+
+
+
