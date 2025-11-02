@@ -2,13 +2,16 @@
 //  main.swift
 //  Algorithm
 //
-//  Created by 김동현 on 11/3/25.
+//  Created by 김동현 on 11/2/25.
 //
 
 import Foundation
 
+// T는 반드시 대소 비교가 가능한 타입
+// T는 Int이고, Int는 Comparable을 이미 채택하고 있으니까 비교(<, >, ==) 가능하다
+// T가 직접 만든 타입이면 어떤 기준으로 비교할 지 모르기 때문에 직접 Comparable를 명시해야 한다
 final class Node<T: Comparable> {
-    var data: T
+    let data: T
     var leftChild: Node?
     var rightChild: Node?
     
@@ -17,67 +20,40 @@ final class Node<T: Comparable> {
     }
 }
 
-final class BinaryTree<T: Comparable> {
+final class BinarySearchTree<T: Comparable> {
     var root: Node<T>?
     
-    // MARK: - Insert
-    // 실제 삽입을 담당하는 재귀 함수
-    func insertNode(node: Node<T>?, data: T) -> Node<T> {
-        
+    func insertNode(_ node: Node<T>?, _ data: T) -> Node<T> {
         guard let node = node else {
             return Node(data: data)
         }
         
         if data < node.data {
-            node.leftChild = insertNode(node: node.leftChild,
-                                        data: data)
+            node.leftChild = insertNode(node.leftChild, data)
         } else {
-            node.rightChild = insertNode(node: node.rightChild, data: data)
+            node.rightChild = insertNode(node.rightChild, data)
         }
-        
         return node
     }
     
-    // 사용자가 호출하는 외부 인터페이스
     func insert(data: T) {
-        root = insertNode(node: root, data: data)
+        root = insertNode(root, data)
     }
     
-    // MARK: - Search
-    func search(node: Node<T>?, data: T) -> Bool {
-        
-        // 찾는 키 값이 없는 경우
+    func searchNode(_ node: Node<T>?, _ data: T) -> Bool {
         guard let node = node else {
             return false
         }
         
-        // 이진 탐색 트리에서 키 값을 찾은 경우
-        if node.data == data {
+        if data == node.data {
             return true
         }
         
-        // 아직 값을 못 찾았다면 현재 노드 깂과 data를 비교해서 탐색할 노드 결정
         return data < node.data ?
-        search(node: node.leftChild, data: data) :
-        search(node: node.rightChild, data: data)
+        searchNode(node.leftChild, data):
+        searchNode(node.rightChild, data)
     }
 }
-
-func solution(_ lst: [Int], _ search_list: [Int]) -> [Bool] {
-    var result: [Bool] = []
-    
-    let tree = BinaryTree<Int>()
-    lst.forEach { tree.insert(data: $0) }
-    search_list.forEach { result.append(tree.search(node: tree.root, data: $0)) }
-    return result
-}
-
-let result1 = solution([5, 3, 8, 4, 2, 1, 7, 10], [1, 2, 5, 6])
-let result2 = solution([1, 3, 5, 7, 9], [2, 4, 6, 8, 10])
-
-print(result1)
-print(result2)
-
 
 // MARK: - https://jeonyeohun.tistory.com/328
 extension Node {
@@ -212,3 +188,13 @@ public func treeString<T>(_ node:T, reversed:Bool=false, isTop:Bool=true, using 
    return (reversed && isTop ? treeLines.reversed(): treeLines)
           .joined(separator:"\n")
 }
+
+
+//let bst = BinarySearchTree<Int>()
+//[5, 3, 8, 4, 2, 1, 7, 10].forEach { bst.insert(data: $0) }
+//print(bst.root?.asString ?? "", "\n")
+//
+//for num in [7, 8, 9] {
+//    let found = bst.searchNode(bst.root, num)
+//    print(found ? "\(num) 찾았습니다" : "\(num) 없습니다")
+//}
