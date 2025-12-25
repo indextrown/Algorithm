@@ -1,35 +1,9 @@
-////
-////  main.swift
-////  Algorithm
-////
-////  Created by 김동현 on 11/3/25.
-////
 //
-//import Foundation
-//freopen("input.txt", "r", stdin)
+//  main.swift
+//  Algorithm
 //
-//final class Node {
-//    let data: Character
-//    var leftChild: Node?
-//    var rightChild: Node?
-//    
-//    init(data: Character) {
-//        self.data = data
-//    }
-//}
+//  Created by 김동현 on 11/3/25.
 //
-//let n = Int(readLine()!)!
-//var nodes: [Character: Node] = [:]
-//
-//for _ in 0..<n {
-//    let input = readLine()!.split(separator: " ").map { Character(String($0)) }
-//    let root = input[0]
-//    let left = input[1]
-//    let right = input[2]
-//    
-//    
-//}
-
 
 import Foundation
 freopen("input.txt", "r", stdin)
