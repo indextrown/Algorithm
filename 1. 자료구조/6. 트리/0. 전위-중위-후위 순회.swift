@@ -40,7 +40,7 @@ for _ in 0..<n {
         if nodes[leftVal] == nil { nodes[leftVal] = Node(leftVal) }
         nodes[rootVal]?.left = nodes[leftVal]
     }
-    
+     
     // 오른쪽 자식
     if rightVal != "." {
         if nodes[rightVal] == nil { nodes[rightVal] = Node(rightVal) }
