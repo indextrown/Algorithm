@@ -6,25 +6,19 @@
 //
 
 import Foundation
-//
-//func permutation<T>(_ arr: inout [T], _ r: Int, _ depth: Int, _ visit: (([T]) -> Void)) {
-//    
-//    if depth == r {
-//        return visit(Array(arr[0..<r]))
-//    }
-//    
-//    for i in depth..<arr.count {
-//        arr.swapAt(i , depth)
-//        permutation(&arr, r, depth + 1, visit)
-//        arr.swapAt(i, depth)
-//    }
-//}
-//
-//
-//var arr = [1, 2, 3]
-//permutation(&arr, 2, 0) { perm in
-//    print(perm)
-//}
+
+func permutation<T>(_ arr: inout [T], _ r: Int, _ depth: Int, _ visit: (([T]) -> Void)) {
+    
+    if depth == r {
+        return visit(Array(arr[0..<r]))
+    }
+    
+    for i in depth..<arr.count {
+        arr.swapAt(i , depth)
+        permutation(&arr, r, depth + 1, visit)
+        arr.swapAt(i, depth)
+    }
+}
 
 @discardableResult
 func permutation<T>(_ arr: inout [T], _ r: Int, _ depth: Int, _ visit: (([T]) -> Bool)) -> Bool {
@@ -42,11 +36,6 @@ func permutation<T>(_ arr: inout [T], _ r: Int, _ depth: Int, _ visit: (([T]) ->
     return false
 }
 
-//var arr = [1, 2, 3]
-//permutation(&arr, 3 , 0) { perm in
-//    print(perm)
-//    return false
-//}
 
 
 /// 조합
@@ -72,12 +61,16 @@ func combi<T>(_ arr: [T], _ r: Int, _ start: Int, _ selected: inout [T],_ visit:
     }
 }
 
-let arr = [1, 2, 3]
+var arr = [1, 2, 3]
+permutation(&arr, 3 , 0) { perm in
+    print(perm)
+    return false
+}
+
 var selected: [Int] = []
 combi(arr, 3, 0, &selected) { comb in
     print(comb)
 }
-
 
 // 조합 반복문 방식
 for i in 0..<arr.count {
@@ -89,27 +82,4 @@ for i in 0..<arr.count {
 }
 
 
-//let n = arr.count
-//let r2 = min(r, n - r)
-//
-//func combination<T>(
-//    _ arr: [T],
-//    _ r: Int,
-//    _ start: Int,
-//    _ path: inout [T],
-//    _ visit: ([T]) -> Bool
-//) -> Bool {
-//    if path.count == r {
-//        return visit(path)
-//    }
-//
-//    for i in start..<arr.count {
-//        path.append(arr[i])
-//        if combination(arr, r, i + 1, &path, visit) {
-//            return true
-//        }
-//        path.removeLast()
-//    }
-//
-//    return false
-//}
+
