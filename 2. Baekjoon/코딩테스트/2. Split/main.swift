@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+let str: String = "apple->banana->orange->grape"
+let result = str.split(separator: "->")
+print(result)

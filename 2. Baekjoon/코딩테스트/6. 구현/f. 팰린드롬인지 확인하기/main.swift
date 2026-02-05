@@ -7,16 +7,23 @@ import Foundation
 
 freopen("input.txt", "r", stdin)
 
+// let chars = readLine()!
+// var result: Bool = true
+
+// for i in 0..<chars.count/2 {
+
+//     let left = chars.index(chars.startIndex, offsetBy: i)
+//     let right = chars.index(chars.startIndex, offsetBy: chars.count - i - 1)
+
+//     if chars[left] != chars[right] { result = false }
+// }
+
+// print(result ? 1 : 0)
+
+
 let chars = readLine()!
-var result: Bool = true
-
-for i in 0..<chars.count/2 {
-
-    let left = chars.index(chars.startIndex, offsetBy: i)
-    let right = chars.index(chars.startIndex, offsetBy: chars.count - i - 1)
-
-    if chars[left] != chars[right] { result = false }
+if chars == String(chars.reversed()) {
+    print(1)
+} else {
+    print(0)
 }
-
-print(result ? 1 : 0)
-

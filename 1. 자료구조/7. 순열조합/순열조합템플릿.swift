@@ -235,3 +235,39 @@ func nextPermutation(_ nums: inout [Int]) -> Bool {
 
     return true
 }
+//var nums = [1,2,3,4,5,6,7,8,9]
+//
+//repeat {
+//    if nums.prefix(7).reduce(0, +) == 100 {
+//        print(nums.prefix(7))
+//        break
+//    }
+//} while nextPermutation(&nums)
+
+func nextCombination(_ comb: inout [Int], n: Int) -> Bool {
+    let k = comb.count
+
+    var i = k - 1
+    while i >= 0 && comb[i] == n - k + i {
+        i -= 1
+    }
+
+    if i < 0 { return false }
+
+    comb[i] += 1
+    for j in i+1..<k {
+        comb[j] = comb[j - 1] + 1
+    }
+
+    return true
+}
+
+//let arr = [1,2,3,4,5]
+//let k = 3
+//
+//var comb = Array(0..<k)   // 초기 상태
+//
+//repeat {
+//    print(comb.map { arr[$0] })
+//} while nextCombination(&comb, n: arr.count)
+
