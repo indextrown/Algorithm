@@ -4,6 +4,9 @@ https://www.acmicpc.net/problem/1159
 
 - Counting Star는 Map 또는 배열
 - cnt[a - 97]
+
+[배운점]
+문자열을 아스키코드로 만들기 혹은 아스키코드를 문자열로 만들 수 있다
 */
 
 import Foundation

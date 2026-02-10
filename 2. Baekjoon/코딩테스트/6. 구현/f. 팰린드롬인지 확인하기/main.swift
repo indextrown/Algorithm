@@ -1,6 +1,9 @@
 /*
 [회문]
 거꾸로 읽어도 똑바로 읽어도 똑같은 언어
+
+[배운점]
+index(chars.startIndex, offsetBy: i)
 */
 
 import Foundation
