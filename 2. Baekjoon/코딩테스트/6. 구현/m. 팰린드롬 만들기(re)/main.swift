@@ -88,7 +88,6 @@ if cnt > 1 {
 import Foundation
 freopen("input.txt", "r", stdin)
 
-var isValid = true
 let input = readLine()!
 var countArr = Array(repeating: 0, count: 26)
 
