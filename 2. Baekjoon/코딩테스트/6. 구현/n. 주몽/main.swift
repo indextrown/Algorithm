@@ -5,6 +5,7 @@ N: 재료
 M: 갑옷 조건
 */
 
+// [성공]
 // import Foundation
 // freopen("input.txt", "r", stdin)
 // let n = Int(readLine()!)!
@@ -19,6 +20,7 @@ M: 갑옷 조건
 // }
 // print(count)
 
+// [다시 풀기]
 import Foundation
 freopen("input.txt", "r", stdin)
 let n = Int(readLine()!)!
@@ -32,4 +34,5 @@ for num in numbers {
         count += 1
     }
     visited.insert(num)
-};print(count)
+}
+print(count)

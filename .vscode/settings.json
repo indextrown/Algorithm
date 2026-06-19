@@ -6,5 +6,8 @@
     "other": "off"
   },
   "editor.suggestOnTriggerCharacters": false,
-  "editor.acceptSuggestionOnEnter": "off"
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.inlineSuggest.enabled": false,
+  "editor.suggest.showWords": false,
+  "editor.suggest.showSnippets": false
 }
