@@ -73,7 +73,7 @@ print(userInfo === userInfo2) // true
 - **Abstract Factory:** 관련된 객체를 묶어서 생성할 수 있는 추상화된 프로토콜 생성, 객체 생성은 마찬가지 구체화 클래스에서 담당
 
 #### Factory Method
-![Factory Method](image/factorymethod.png)
+![Factory Method](../Image/factorymethod.png)
 - Factory Method Pattern은 실제 인스턴스를 생성하는 팩토리들에 대해 인터페이스를 제공하고 이 인터페이스를 구현하는 하위 클래스들에 의해 인스턴스가 생성되는 디자인 패턴입니다.
 ```swift
 
